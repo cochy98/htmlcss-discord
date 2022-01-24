@@ -15,6 +15,16 @@
 /* Utilizzo il font 'whitney' su tutto il body */
 body{
     font-family: 'whitney', sans-serif;
+    color: #23272a;
+}
+
+h2{
+    font-size: 3.2em;
+    margin-bottom: 25px;
+}
+
+p{
+    font-size: 1.4em;
 }
 
 /* I container prendono una grandezza massima e sono centrati */
@@ -34,14 +44,30 @@ body{
     color: #23272a;
 }
 
+/* Classe comune per rendere i button maxi */
+.btn-maxi{
+    font-size: 1.3em;
+    padding: 16px 40px;
+    border-radius: 35px;
+}
+
 /* Classe supplementare per rendere un button nero chiaro */
 .btn-lt-black{
     background-color: #23272a;
     color: white;
 }
 
+/* Classe supplementare per rendere un button violetto */
+.btn-violet{
+    background-color: #8ea1e1;
+    color: white;
+}
+
 /* Classe per applicare il position relative */
 .relative{position: relative;}
+
+.fl-left{float: left;}
+.fl-right{float: right;}
 
 /* Altezza dell'header */
 header{
@@ -94,6 +120,7 @@ section#jumbotron{
     height: 700px;
     background-image: url("../img/jumbo.png");
     background-size: cover;
+    margin-bottom: 120px;
 }
 
 /* Il box info del  jumbotron prende una larghezza fissa e viene posto al centro con absolute & transform */
@@ -113,14 +140,47 @@ section#jumbotron{
 }
 
 .jumbotron-info p{
-    font-size: 1.4em;
     margin: 50px 0 30px;
 }
 
 .jumbotron-info button.btn {
     margin: 0 15px;
-    font-size: 1.3em;
-    padding: 16px 40px;
-    border-radius: 35px;
+
 }
 /* /FINE regole di formattazione del testo del jumbotron */
+
+
+section.container{
+    margin-bottom: 300px;
+}
+
+section.container>img{
+    width: 550px;
+}
+
+section.container .box-description{
+    width: 413px;
+    margin-top: 25px;
+}
+
+/* section.container .box-description p{
+    font-size: 1.4em;
+}  */
+
+section#maxi .container{
+    text-align: center;
+}
+
+section#maxi img {
+    width: 1200px;
+    margin-bottom: 100px;
+}
+
+.start h3 {
+    font-size: 2.2em;
+    margin-bottom: 42px;
+}
+
+section#maxi .start{
+    margin-bottom: 100px;
+}
