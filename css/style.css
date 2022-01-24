@@ -12,13 +12,115 @@
     clear: both;
 }
 
+/* Utilizzo il font 'whitney' su tutto il body */
+body{
+    font-family: 'whitney', sans-serif;
+}
+
+/* I container prendono una grandezza massima e sono centrati */
 .container{
     width: 90%;
     max-width: 1180px;
     margin: 0 auto;
 }
 
-.header{
-    height: 80px;
-    background-color: rgb(49, 97, 224);
+/* Classe comune per tutti i button */
+.btn{
+    background-color: white;
+    padding: 11px 15px;
+    border: none;
+    border-radius: 19px;
+    font-weight: bold;
+    color: #23272a;
 }
+
+/* Classe supplementare per rendere un button nero chiaro */
+.btn-lt-black{
+    background-color: #23272a;
+    color: white;
+}
+
+/* Classe per applicare il position relative */
+.relative{position: relative;}
+
+/* Altezza dell'header */
+header{
+    height: 80px;
+    background-color: #255ee9;
+    line-height: 80px;
+}
+
+/* Gli elementi del nav dell'header vengono mostrati in orizziontale */
+header nav li{
+    list-style-type: none;
+    display: inline;
+}
+
+/* Il logo e il button occupano ognuno il 20% dello spazio a disposizione */
+.logo-img-box, .button-box{
+    width: 20%;
+}
+
+/* Il nav occuperà il restante 60% e sarà centrato */
+header nav{
+    width: 60%;
+    text-align: center;
+}
+
+/* Tutti gli elementi dell'header vengono affiancati con float */
+.logo-img-box, nav, .button-box{
+    float: left;
+}
+
+/* Il logo viene centrato in verticale */
+img#logo-img{
+    vertical-align: middle;
+}
+
+/* Gli elementi della lista del nav vengono distanziati */
+nav li a{
+    text-decoration: none;
+    color: white;
+    margin: 0 18px;
+}
+
+/* Allineo il pulsante dell'header a destra */
+.button-box{
+    text-align: right;
+}
+
+/* La sezione jumbotron prende un'altezza fissa ed ha un'immagine di cover */
+section#jumbotron{
+    height: 700px;
+    background-image: url("../img/jumbo.png");
+    background-size: cover;
+}
+
+/* Il box info del  jumbotron prende una larghezza fissa e viene posto al centro con absolute & transform */
+.jumbotron-info {
+    width: 850px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+    /* Regole di formattazione del testo del jumbotron */
+.jumbotron-info h1{
+    font-size: 4em;
+}
+
+.jumbotron-info p{
+    font-size: 1.4em;
+    margin: 50px 0 30px;
+}
+
+.jumbotron-info button.btn {
+    margin: 0 15px;
+    font-size: 1.3em;
+    padding: 16px 40px;
+    border-radius: 35px;
+}
+/* /FINE regole di formattazione del testo del jumbotron */
